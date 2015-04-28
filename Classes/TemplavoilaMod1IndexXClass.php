@@ -106,7 +106,7 @@ class TemplavoilaMod1IndexXClass extends \tx_templavoila_module1 {
 						// simulate TCA for FAL-field
 						$GLOBALS['TCA'][$table]['columns'][$fieldName]['config'] = $TCEformsConfiguration;
 
-						$thumbnail .= \TYPO3\CMS\Backend\Utility\BackendUtility::thumbCode(
+						$thumbnail = \TYPO3\CMS\Backend\Utility\BackendUtility::thumbCode(
 							array('uid' => $elData['uid']),
 							$table,
 							$fieldName,
